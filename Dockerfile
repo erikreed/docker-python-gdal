@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
   apt-get dist-upgrade -y && \
-  apt-get install -y libgdal-dev && \
+  apt-get install -y libgdal-dev postgis && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists*
 
